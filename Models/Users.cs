@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BnrPostApi.Models
+namespace DemoPostApi.Models
 {
     public class Users
     {

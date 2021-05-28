@@ -1,12 +1,12 @@
-﻿using BnrPostApi.PostsDAL;
+﻿using DemoPostApi.PostsDAL;
 using Microsoft.AspNetCore.Mvc;
-using BnrPostApi.Models;
+using DemoPostApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BnrPostApi.Controllers
+namespace DemoPostApi.Controllers
 {
     [ApiController]
     public class PostController : ControllerBase

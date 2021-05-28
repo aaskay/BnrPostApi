@@ -1,4 +1,4 @@
-﻿using BnrPostApi.Models;
+﻿using DemoPostApi.Models;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using SQLite.CodeFirst;
@@ -8,7 +8,7 @@ using System.Data.Common;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BnrPostApi.PostsDAL
+namespace DemoPostApi.PostsDAL
 {
     public class PostsContext : DbContext
     {

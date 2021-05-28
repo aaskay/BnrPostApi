@@ -1,10 +1,10 @@
-﻿using BnrPostApi.Models;
+﻿using DemoPostApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BnrPostApi.PostsDAL
+namespace DemoPostApi.PostsDAL
 {
     public interface IPostData
     {

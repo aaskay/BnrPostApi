@@ -1,11 +1,11 @@
-﻿using BnrPostApi.Models;
-using BnrPostApi.PostsDAL;
+﻿using DemoPostApi.Models;
+using DemoPostApi.PostsDAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BnrPostApi.DAL
+namespace DemoPostApi.DAL
 {
     public class SqlPostData : IPostData
     {
