@@ -51,6 +51,7 @@ namespace DemoPostApi.DAL
             original.Title = updated.Title;
 
             _postContext.Posts.Update(original);
+            _postContext.SaveChanges();
 
             return GetPost(original.Id);
         }
