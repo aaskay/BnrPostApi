@@ -1,7 +1,9 @@
 ﻿using DemoPostApi.Models;
 using DemoPostApi.PostsDAL;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -14,6 +16,7 @@ namespace DemoPostApi.DAL
         {
             _postContext = postContext;
         }
+
         public Post CreatePost(Post posts)
         {
             _postContext.Posts.Add(posts);
@@ -23,7 +26,8 @@ namespace DemoPostApi.DAL
 
         public void DeletePost(Post post)
         {
-            throw new NotImplementedException();
+            _postContext.Posts.Remove(post);
+            _postContext.SaveChanges();
         }
 
         public IList<Post> GetAllPosts()
@@ -43,7 +47,12 @@ namespace DemoPostApi.DAL
 
         public Post UpdatePost(Post original, Post updated)
         {
-            throw new NotImplementedException();
+            original.Body = updated.Body;
+            original.Title = updated.Title;
+
+            _postContext.Posts.Update(original);
+
+            return GetPost(original.Id);
         }
     }
 }
