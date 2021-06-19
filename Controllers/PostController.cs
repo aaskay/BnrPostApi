@@ -73,7 +73,7 @@ namespace DemoPostApi.Controllers
             return NotFound($"Post with id: {id} was not found");
         }
 
-        [HttpPatch]
+        [HttpPut]
         [Route("api/[Controller]/{id}")]
         public IActionResult UpdatePost(int id, Post updatedPost)
         {
